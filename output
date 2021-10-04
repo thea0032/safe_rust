@@ -1,0 +1,1382 @@
+    <choice req="MISSILES_1">
+        <text> Craft your Leto missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your Leto missile on the table... </text>
+            <remove name="MISSILES_1"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_1"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the Leto missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_1_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the Leto missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_1_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the Leto missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_1_ION"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the Leto missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_1_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the Leto missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_1_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_2">
+        <text> Craft your Artemis missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your Artemis missile on the table... </text>
+            <remove name="MISSILES_2"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_2"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the Artemis missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_2_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the Artemis missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_2_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the Artemis missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_2_ION"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the Artemis missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_2_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the Artemis missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_2_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_3">
+        <text> Craft your Hermes missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your Hermes missile on the table... </text>
+            <remove name="MISSILES_3"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_3"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the Hermes missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_3_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the Hermes missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_3_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the Hermes missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_3_ION"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the Hermes missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_3_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the Hermes missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_3_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_BURST">
+        <text> Craft your Pegasus missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your Pegasus missile on the table... </text>
+            <remove name="MISSILES_BURST"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_BURST"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the Pegasus missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_BURST_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the Pegasus missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_BURST_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the Pegasus missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_BURST_ION"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the Pegasus missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_BURST_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the Pegasus missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_BURST_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER">
+        <text> Craft your Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER_BIO">
+        <text> Craft your bio Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your bio Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER_BIO"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER_BIO"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the bio Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_BIO_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the bio Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the bio Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the bio Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the bio Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_BIO_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER_FIRE">
+        <text> Craft your fire Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your fire Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER_FIRE"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER_FIRE"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the fire Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the fire Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the fire Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the fire Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the fire Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER_ION">
+        <text> Craft your ion Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your ion Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER_ION"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER_ION"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the ion Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the ion Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the ion Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the ion Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the ion Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER_PIERCE">
+        <text> Craft your pierce Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your pierce Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER_PIERCE"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the pierce Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the pierce Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the pierce Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the pierce Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the pierce Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="MISSILES_DISPENSER_STUN">
+        <text> Craft your stun Dispenser missile (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your stun Dispenser missile on the table... </text>
+            <remove name="MISSILES_DISPENSER_STUN"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="MISSILES_DISPENSER_STUN"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the stun Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_BIO_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the stun Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_FIRE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_ION">
+                <text>(ion effect) Add the ion effect to the stun Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_ION"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_ION_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the stun Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_PIERCE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the stun Dispenser missile (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="MISSILES_DISPENSER_STUN_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER">
+        <text> Craft your dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER_BIO">
+        <text> Craft your bio dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your bio dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER_BIO"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER_BIO"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the bio dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_BIO_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the bio dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the bio dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the bio dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_BIO_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER_FIRE">
+        <text> Craft your fire dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your fire dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER_FIRE"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER_FIRE"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the fire dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the fire dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the fire dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the fire dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER_PIERCE">
+        <text> Craft your pierce dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your pierce dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER_PIERCE"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the pierce dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the pierce dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the pierce dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the pierce dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER_STUN">
+        <text> Craft your stun dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your stun dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER_STUN"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER_STUN"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the stun dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_BIO_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the stun dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_FIRE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the stun dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_PIERCE_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the stun dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_STUN_2"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="BEAM_DISPENSER_MINI">
+        <text> Craft your mini dispenser beam (note: You will get it back if you decide not to modify it) </text>
+        <event>
+            <text> You put your mini dispenser beam on the table... </text>
+            <remove name="BEAM_DISPENSER_MINI"/>
+            <choice hidden="true">
+                <text> Never mind - do something else </text>
+                <event>
+                    <weapon name="BEAM_DISPENSER_MINI"/>
+                    <choice hidden="true">
+                        <text> Continue... </text>
+                        <event load="CRAFTING_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_BIO">
+                <text>(bio effect) Add the bio effect to the mini dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_BIO"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_MINI_BIO"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_FIRE">
+                <text>(fire effect) Add the fire effect to the mini dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_FIRE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_MINI_FIRE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_PIERCE">
+                <text>(pierce effect) Add the pierce effect to the mini dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_PIERCE"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_MINI_PIERCE"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="EFFECT_STUN">
+                <text>(stun effect) Add the stun effect to the mini dispenser beam (will increase charge time)</text>
+                <event>
+                    <text> You combine the two weapons. </text>
+                    <remove name="EFFECT_STUN"/>
+                    <choice hidden="true">
+                        <text> Pick up the result </text>
+                        <event>
+                            <text> You pick up the resulting weapon. </text>
+                            <weapon name="BEAM_DISPENSER_MINI_STUN"/>
+                            <event load="CRAFTING_LOAD"/>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
